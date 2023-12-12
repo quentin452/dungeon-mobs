@@ -20,8 +20,8 @@ public class DungeonMobsWorldGenEvent
 {
 
     private final Set<Long> chunksGenerated = new HashSet<>();
-
-    @SubscribeEvent
+    // todo fix https://github.com/quentin452/privates-minecraft-modpack/issues/553
+ /*   @SubscribeEvent
     public void onPopulateChunk(PopulateChunkEvent.Populate event) {
 
         long chunkId = (long) event.chunkX + event.chunkZ << 32;
@@ -35,6 +35,8 @@ public class DungeonMobsWorldGenEvent
         chunksGenerated.add(chunkId);
 
     }
+
+  */
     private void generateTraps(IChunkProvider chunkProvider, World world, Random rand, int chunkX, int chunkZ) {
         if (!world.getChunkProvider().chunkExists(chunkX, chunkZ)) {
             return;
