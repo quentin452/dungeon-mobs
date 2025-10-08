@@ -17,6 +17,7 @@ import java.util.List;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityList;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.potion.Potion;
 import net.minecraft.world.biome.BiomeGenBase;
@@ -357,6 +358,8 @@ public class DungeonMobs
 		if(spawnRustMonster)
 		{
 			EntityRegistry.registerModEntity(EntityRustMonster.class, "DMRustMonster", rustMonsterID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMRustMonster", EntityRustMonster.class);
+			EntityList.classToStringMapping.put(EntityRustMonster.class, "DMRustMonster");
 			EntityRegistry.addSpawn(EntityRustMonster.class, 8, 1, 4, EnumCreatureType.monster, biomeList);
 			ItemSpawnEgg rustMonsterSpawn = new ItemSpawnEgg("DMRustMonster", 0x643200, 0x7C0F0F);
 			rustMonsterSpawn.setTextureName("dungeonmobs:spawn_egg");
@@ -367,6 +370,8 @@ public class DungeonMobs
 		if(spawnGhoul)
 		{
 			EntityRegistry.registerModEntity(EntityGhoul.class, "DMGhoul", ghoulID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMGhoul", EntityGhoul.class);
+			EntityList.classToStringMapping.put(EntityGhoul.class, "DMGhoul");
 			EntityRegistry.addSpawn(EntityGhoul.class, 5, 2, 4, EnumCreatureType.monster, biomeList);
 			ItemSpawnEgg ghoulSpawn = new ItemSpawnEgg("DMGhoul", 0x5F3E67, 0x362C1A);
 			ghoulSpawn.setTextureName("dungeonmobs:spawn_egg");
@@ -377,6 +382,8 @@ public class DungeonMobs
 		if(spawnShrieker)
 		{
 			EntityRegistry.registerModEntity(EntityShrieker.class, "DMShrieker", shriekerID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMShrieker", EntityShrieker.class);
+			EntityList.classToStringMapping.put(EntityShrieker.class, "DMShrieker");
 			EntityRegistry.addSpawn(EntityShrieker.class, 5, 2, 4, EnumCreatureType.monster, biomeList);
 			ItemSpawnEgg shriekerSpawn = new ItemSpawnEgg("DMShrieker", 0xBBA786, 0xE4DCB0);
 			shriekerSpawn.setTextureName("dungeonmobs:spawn_egg");
@@ -387,6 +394,8 @@ public class DungeonMobs
 		if(spawnUmberHulk)
 		{
 			EntityRegistry.registerModEntity(EntityUmberHulk.class, "DMUmberHulk", umberHulkID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMUmberHulk", EntityUmberHulk.class);
+			EntityList.classToStringMapping.put(EntityUmberHulk.class, "DMUmberHulk");
 			EntityRegistry.addSpawn(EntityUmberHulk.class, 2, 1, 1, EnumCreatureType.monster, biomeList);
 			ItemSpawnEgg umberHulkSpawn = new ItemSpawnEgg("DMUmberHulk", 0x734A12, 0x8B795E);
 			umberHulkSpawn.setTextureName("dungeonmobs:spawn_egg");
@@ -397,6 +406,8 @@ public class DungeonMobs
 		if(spawnHookHorror)
 		{
 			EntityRegistry.registerModEntity(EntityHookHorror.class, "DMHookHorror", hookHorrorID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMHookHorror", EntityHookHorror.class);
+			EntityList.classToStringMapping.put(EntityHookHorror.class, "DMHookHorror");
 			EntityRegistry.addSpawn(EntityHookHorror.class, 4, 1, 4, EnumCreatureType.monster, biomeList);
 			ItemSpawnEgg hookHorrorSpawn = new ItemSpawnEgg("DMHookHorror", 0x4372AA, 0xD9D9F3);
 			hookHorrorSpawn.setTextureName("dungeonmobs:spawn_egg");
@@ -407,18 +418,24 @@ public class DungeonMobs
 		if(spawnBeholder)
 		{
 			EntityRegistry.registerModEntity(EntityAhriman.class, "DMBeholder", ahrimanID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMBeholder", EntityAhriman.class);
+			EntityList.classToStringMapping.put(EntityAhriman.class, "DMBeholder");
 			EntityRegistry.addSpawn(EntityAhriman.class, 2, 1, 1, EnumCreatureType.monster, biomeList);
 			ItemSpawnEgg beholderSpawn = new ItemSpawnEgg("DMBeholder", 0x720000, 0xFFF99A);
 			beholderSpawn.setTextureName("dungeonmobs:spawn_egg");
 			GameRegistry.registerItem(beholderSpawn, "spawnEggBeholder");
 			
 			EntityRegistry.registerModEntity(EntityEyeRay.class, "DMEyeRay", eyerayID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMEyeRay", EntityEyeRay.class);
+			EntityList.classToStringMapping.put(EntityEyeRay.class, "DMEyeRay");
 		}
 			
 		// TROLL
 		if(spawnTroll)
 		{
 			EntityRegistry.registerModEntity(EntityTroll.class, "DMTroll", trollID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMTroll", EntityTroll.class);
+			EntityList.classToStringMapping.put(EntityTroll.class, "DMTroll");
 			EntityRegistry.addSpawn(EntityTroll.class, 6, 1, 4, EnumCreatureType.monster, biomeList);
 			ItemSpawnEgg trollSpawn = new ItemSpawnEgg("DMTroll", 0x164300, 0x292929);
 			trollSpawn.setTextureName("dungeonmobs:spawn_egg");
@@ -429,6 +446,8 @@ public class DungeonMobs
 		if(spawnCaveFisher)
 		{
 			EntityRegistry.registerModEntity(EntityCaveFisher.class, "DMCaveFisher", caveFisherID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMCaveFisher", EntityCaveFisher.class);
+			EntityList.classToStringMapping.put(EntityCaveFisher.class, "DMCaveFisher");
 			EntityRegistry.addSpawn(EntityCaveFisher.class, 4, 1, 2, EnumCreatureType.monster, biomeList);
 			ItemSpawnEgg caveFisherSpawn = new ItemSpawnEgg("DMCaveFisher", 0xf6e7cc, 0x29a0b2);
 			caveFisherSpawn.setTextureName("dungeonmobs:spawn_egg");
@@ -439,18 +458,24 @@ public class DungeonMobs
 		if(spawnDestrachan)
 		{
 			EntityRegistry.registerModEntity(EntityDestrachan.class, "DMDestrachan", destrachanID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMDestrachan", EntityDestrachan.class);
+			EntityList.classToStringMapping.put(EntityDestrachan.class, "DMDestrachan");
 			EntityRegistry.addSpawn(EntityDestrachan.class, 5, 1, 3, EnumCreatureType.monster, biomeList);
 			ItemSpawnEgg destrachanSpawn = new ItemSpawnEgg("DMDestrachan", 0xc99918, 0x161616);
 			destrachanSpawn.setTextureName("dungeonmobs:spawn_egg");
 			GameRegistry.registerItem(destrachanSpawn, "spawnEggDestrachan");
 			
 			EntityRegistry.registerModEntity(EntitySonicBoom.class, "DMSonicBoom", sonicBoomID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMSonicBoom", EntitySonicBoom.class);
+			EntityList.classToStringMapping.put(EntitySonicBoom.class, "DMSonicBoom");
 		}
 		
 		// ILLITHID
 		if(spawnIllithid)
 		{
 			EntityRegistry.registerModEntity(EntityIllithid.class, "DMIllithid", illithidID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMIllithid", EntityIllithid.class);
+			EntityList.classToStringMapping.put(EntityIllithid.class, "DMIllithid");
 			EntityRegistry.addSpawn(EntityIllithid.class, 3, 1, 1, EnumCreatureType.monster, biomeList);
 			ItemSpawnEgg illithidSpawn = new ItemSpawnEgg("DMIllithid", 0x9932CD, 0xf6f4ba);
 			illithidSpawn.setTextureName("dungeonmobs:spawn_egg");
@@ -461,6 +486,8 @@ public class DungeonMobs
 		if(spawnHellHound)
 		{
 			EntityRegistry.registerModEntity(EntityNetherHound.class, "DMHellHound", netherHoundID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMHellHound", EntityNetherHound.class);
+			EntityList.classToStringMapping.put(EntityNetherHound.class, "DMHellHound");
 			EntityRegistry.addSpawn(EntityNetherHound.class, 4, 1, 2, EnumCreatureType.monster, biomeList);
 			EntityRegistry.addSpawn(EntityNetherHound.class, 10, 4, 4, EnumCreatureType.monster, hellList);
 			ItemSpawnEgg netherHoundSpawn = new ItemSpawnEgg("DMHellHound", 0xf9390d, 0x775532);
@@ -472,20 +499,28 @@ public class DungeonMobs
 		if(spawnRakshasa)
 		{
 			EntityRegistry.registerModEntity(EntityRakshasa.class, "DMRakshasa", rakshasaID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMRakshasa", EntityRakshasa.class);
+			EntityList.classToStringMapping.put(EntityRakshasa.class, "DMRakshasa");
 			EntityRegistry.addSpawn(EntityRakshasa.class, 3, 1, 1, EnumCreatureType.monster, biomeList);
 			ItemSpawnEgg rakshasaSpawn = new ItemSpawnEgg("DMRakshasa", 0xa06c3e, 0xdec580);
 			rakshasaSpawn.setTextureName("dungeonmobs:spawn_egg");
 			GameRegistry.registerItem(rakshasaSpawn, "spawnEggRakshasa");
 			
 			EntityRegistry.registerModEntity(EntityRakshasaImage.class, "DMRakshasaImage", rakshasaImageID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMRakshasaImage", EntityRakshasaImage.class);
+			EntityList.classToStringMapping.put(EntityRakshasaImage.class, "DMRakshasaImage");
 			
 			EntityRegistry.registerModEntity(EntityMagicMissile.class, "DMMagicMissile", magicMissileID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMMagicMissile", EntityMagicMissile.class);
+			EntityList.classToStringMapping.put(EntityMagicMissile.class, "DMMagicMissile");
 		}
 			
 		// LIZALFOS
 		if(spawnLizalfos)
 		{
 			EntityRegistry.registerModEntity(EntityLizalfos.class, "DMLizalfos", lizalfosID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMLizalfos", EntityLizalfos.class);
+			EntityList.classToStringMapping.put(EntityLizalfos.class, "DMLizalfos");
 			EntityRegistry.addSpawn(EntityLizalfos.class, 2, 1, 2, EnumCreatureType.monster, biomeList);
 			ItemSpawnEgg lizalfosSpawn = new ItemSpawnEgg("DMLizalfos", 0x257a36, 0xe5d067);
 			lizalfosSpawn.setTextureName("dungeonmobs:spawn_egg");
@@ -496,18 +531,24 @@ public class DungeonMobs
 		if(spawnCockatrice)
 		{
 			EntityRegistry.registerModEntity(EntityCockatrice.class, "DMCockatrice", cockatriceID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMCockatrice", EntityCockatrice.class);
+			EntityList.classToStringMapping.put(EntityCockatrice.class, "DMCockatrice");
 			EntityRegistry.addSpawn(EntityCockatrice.class, 5, 1, 3, EnumCreatureType.monster, biomeList);
 			ItemSpawnEgg cockatriceSpawn = new ItemSpawnEgg("DMCockatrice", 0x8acf92, 0x93ab96);
 			cockatriceSpawn.setTextureName("dungeonmobs:spawn_egg");
 			GameRegistry.registerItem(cockatriceSpawn, "spawnEggCockatrice");
 				
 			EntityRegistry.registerModEntity(EntityPetrified.class, "DMPetrified", petrifiedID, this, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMPetrified", EntityPetrified.class);
+			EntityList.classToStringMapping.put(EntityPetrified.class, "DMPetrified");
 		}
 		
 		// MANTICORE
 		if(spawnManticore)
 		{
 			EntityRegistry.registerModEntity(EntityManticore.class, "DMManticore", manticoreID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMManticore", EntityManticore.class);
+			EntityList.classToStringMapping.put(EntityManticore.class, "DMManticore");
 			EntityRegistry.addSpawn(EntityManticore.class, 4, 1, 2, EnumCreatureType.monster, biomeList);
 			ItemSpawnEgg manticoreSpawn = new ItemSpawnEgg("DMManticore", 0xd28247, 0x201f1d);
 			manticoreSpawn.setTextureName("dungeonmobs:spawn_egg");
@@ -518,6 +559,8 @@ public class DungeonMobs
 		if(spawnBladeTrap)
 		{
 			EntityRegistry.registerModEntity(EntityBladeTrap.class, "DMBladeTrap", bladeTrapID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMBladeTrap", EntityBladeTrap.class);
+			EntityList.classToStringMapping.put(EntityBladeTrap.class, "DMBladeTrap");
 			ItemSpawnEgg bladeTrapSpawn = new ItemSpawnEgg("DMBladeTrap", 0x464646, 0xb70202);
 			bladeTrapSpawn.setTextureName("dungeonmobs:spawn_egg");
 			GameRegistry.registerItem(bladeTrapSpawn, "spawnEggBladeTrap");
@@ -532,6 +575,8 @@ public class DungeonMobs
     	if(spawnThoqqua)
     	{
 	    	EntityRegistry.registerModEntity(EntityThoqqua.class, "DMThoqqua", thoqquaID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMThoqqua", EntityThoqqua.class);
+			EntityList.classToStringMapping.put(EntityThoqqua.class, "DMThoqqua");
 			EntityRegistry.addSpawn(EntityThoqqua.class, 3, 1, 1, EnumCreatureType.monster, biomeList);
 			EntityRegistry.addSpawn(EntityThoqqua.class, 6, 1, 2, EnumCreatureType.monster, hellList);
 			ItemSpawnEgg thoqquaSpawn = new ItemSpawnEgg("DMThoqqua", 0xf1c33a, 0xb08968);
@@ -546,6 +591,8 @@ public class DungeonMobs
 		if(spawnVescavor)
 		{
 			EntityRegistry.registerModEntity(EntityVescavor.class, "DMVescavor", vescavorID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMVescavor", EntityVescavor.class);
+			EntityList.classToStringMapping.put(EntityVescavor.class, "DMVescavor");
 			EntityRegistry.addSpawn(EntityVescavor.class, 6, 2, 8, EnumCreatureType.monster, biomeList);
 			ItemSpawnEgg vescavorSpawn = new ItemSpawnEgg("DMVescavor", 0x170007, 0xa05155);
 			vescavorSpawn.setTextureName("dungeonmobs:spawn_egg");
@@ -556,11 +603,15 @@ public class DungeonMobs
 		if(spawnBeamos)
 		{
 			EntityRegistry.registerModEntity(EntityBeamos.class, "DMBeamos", beamosID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMBeamos", EntityBeamos.class);
+			EntityList.classToStringMapping.put(EntityBeamos.class, "DMBeamos");
 			ItemSpawnEgg beamosSpawn = new ItemSpawnEgg("DMBeamos", 0x535353, 0x235712);
 			beamosSpawn.setTextureName("dungeonmobs:spawn_egg");
 			GameRegistry.registerItem(beamosSpawn, "spawnEggBeamos");
 			
 	    	EntityRegistry.registerModEntity(EntityBeamosBeam.class, "DMBeamosBeam", beamosBeamID, instance, 80, 3, true);
+			EntityList.stringToClassMapping.put("DMBeamosBeam", EntityBeamosBeam.class);
+			EntityList.classToStringMapping.put(EntityBeamosBeam.class, "DMBeamosBeam");
 		}
     	
     	EntityShrieker.appendToSummonList("DMRustMonster");
